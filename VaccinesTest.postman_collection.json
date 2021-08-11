@@ -1,0 +1,123 @@
+{
+	"info": {
+		"_postman_id": "0c04f7aa-fbed-41e4-898d-dd2ed9546ca1",
+		"name": "VaccinesTest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create citizen",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"Prueba\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/citizens",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"citizens"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create penaltie",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"citizenId\": 1,\n\t\"reason\": \"ddddddd\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/penalties",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"penalties"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create vaccine",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"citizenId\": 1,\n\t\"brand\": \"pFizer\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/vaccines",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"vaccines"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get citizen",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/citizens/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"citizens",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
