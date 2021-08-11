@@ -36,7 +36,7 @@
 			"response": []
 		},
 		{
-			"name": "Create penaltie",
+			"name": "Create penalties",
 			"request": {
 				"method": "POST",
 				"header": [
